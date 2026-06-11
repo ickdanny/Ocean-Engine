@@ -2,7 +2,7 @@
 #define CONFIG_H
 
 /* The name of the game window */
-#define config_windowName "OYCN"
+#define config_windowName "OYCN v1.1"
 
 /* The file name of the settings file */
 #define config_settingsFileName "oycn.cfg"

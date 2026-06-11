@@ -26,8 +26,6 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(glew)
 
-# find_package(GLEW REQUIRED)
-
 # add_compile_options(-fsanitize=address -fno-omit-frame-pointer -g)
 # add_link_options(-fsanitize=address -fno-omit-frame-pointer -g)
 
@@ -89,8 +87,6 @@ if(WIN32)
         "opengl32"
         glfw
         libglew_static
-        # ${CMAKE_SOURCE_DIR}/libraries/glfw/lib-vc2022/glfw3.lib
-        # ${CMAKE_SOURCE_DIR}/libraries/glew/lib/glew32s.lib
     )
     target_link_libraries(OceanEngine ${LIBS})
 elseif(APPLE)
