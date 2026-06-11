@@ -16,12 +16,11 @@ cmake ..
 cmake --build . --config Release
 cd ..
  
-# # Copy everything into dir
-# cp build\Release\ProcessEngine.exe EU05_POTUK\EU05_POTUK.exe
-# cp build\*.cso EU05_POTUK\
-# # Cannot copy the base res dir because build process involves copying over scripts
-# cp -r build\Release\res EU05_POTUK\res
-# cp -r packaging\* EU05_POTUK\
-# 
-# # Zip it up
-# Compress-Archive -Path EU05_POTUK -DestinationPath EU05_POTUK.zip
+# Copy everything into dir
+cp build\Release\OceanEngine.exe EU06_OYCN\EU06_OYCN.exe
+# Cannot copy the base res dir because build process involves copying over scripts
+cp -r build\res EU06_OYCN\res
+cp -r packaging\* EU06_OYCN\
+
+# Zip it up
+# Compress-Archive -Path EU06_OYCN -DestinationPath EU06_OYCN.zip
