@@ -20,6 +20,17 @@
 #include "SystemDestructors.h"
 #include "Scripts.h" /* to destroy vm pool */
 
+/* define to search for mem leaks */
+// #define SANITIZE
+
+#ifdef SANITIZE
+#ifdef WIN32
+#define _CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
+#endif
+#endif
+
 /* A struct holding all the elements of the engine */
 typedef struct Engine{
     Settings settings;
@@ -69,6 +80,16 @@ void renderCallback(void *voidPtr){
 
 /* The entry point for the game */
 int main(){
+    //todo remove this
+    #ifdef SANITIZE
+    #ifdef WIN32
+    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+    _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_FILE);
+    _CrtSetReportFile(_CRT_WARN, _CRTDBG_FILE_STDOUT);
+    printf("WIN32 sanitize enabled\n");
+    #endif
+    #endif
+
     Engine engine = {0};
 
     /* read settings */
