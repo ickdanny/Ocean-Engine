@@ -8,6 +8,26 @@ set(CMAKE_C_EXTENSIONS OFF)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
+include(FetchContent)
+
+FetchContent_Declare(
+    glfw
+    GIT_REPOSITORY https://github.com/glfw/glfw.git
+    GIT_TAG 3.4
+)
+
+FetchContent_MakeAvailable(glfw)
+
+FetchContent_Declare(
+    glew
+    GIT_REPOSITORY https://github.com/Perlmint/glew-cmake
+    GIT_TAG glew-cmake-2.3.1
+)
+
+FetchContent_MakeAvailable(glew)
+
+# find_package(GLEW REQUIRED)
+
 # add_compile_options(-fsanitize=address -fno-omit-frame-pointer -g)
 # add_link_options(-fsanitize=address -fno-omit-frame-pointer -g)
 
@@ -47,13 +67,13 @@ add_subdirectory(./source/AAAgame)
 # copy scripts
 add_custom_target(script)
 add_custom_command(TARGET script POST_BUILD COMMAND ${CMAKE_COMMAND}
-        -E rm -r ${CMAKE_BINARY_DIR}/res/script)
+        -E rm -rf ${CMAKE_BINARY_DIR}/res/script)
 add_custom_command(TARGET script POST_BUILD COMMAND ${CMAKE_COMMAND}
         -E copy_directory
         ${CMAKE_SOURCE_DIR}/script/ ${CMAKE_BINARY_DIR}/res/script)
 
 include_directories(${PROJECT_DIRECTORIES})
-include_directories(${CMAKE_SOURCE_DIR}/libraries/glfw/include)
+# include_directories(${CMAKE_SOURCE_DIR}/libraries/glfw/include)
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
 
@@ -67,10 +87,12 @@ if(WIN32)
     set(LIBS
         "winmm"
         "opengl32"
-        ${CMAKE_SOURCE_DIR}/libraries/glfw/lib-vc2022/glfw3.lib
-        ${CMAKE_SOURCE_DIR}/libraries/glew/lib/glew32s.lib
+        glfw
+        libglew_static
+        # ${CMAKE_SOURCE_DIR}/libraries/glfw/lib-vc2022/glfw3.lib
+        # ${CMAKE_SOURCE_DIR}/libraries/glew/lib/glew32s.lib
     )
-    target_link_libraries(OceanEngine PRIVATE ${LIBS})
+    target_link_libraries(OceanEngine ${LIBS})
 elseif(APPLE)
     add_compile_definitions(__unix__) # not sure why undefined
     # https://stackoverflow.com/questions/17070101/why-i-cannot-link-the-mac-framework-file-with-cmake
@@ -82,7 +104,8 @@ elseif(APPLE)
         "-framework CoreGraphics"
         "-framework AppKit"
         "-framework OpenGL"
-        ${CMAKE_SOURCE_DIR}/libraries/glfw/lib-arm64/libglfw3.a
+        glfw
+        # ${CMAKE_SOURCE_DIR}/libraries/glfw/lib-arm64/libglfw3.a
     )
     target_link_libraries(OceanEngine ${LIBS})
     set_target_properties(OceanEngine PROPERTIES LINK_FLAGS "-Wl,-F/Library/Frameworks")
@@ -90,11 +113,12 @@ elseif(UNIX)
     add_compile_definitions(GLEW_STATIC _POSIX_C_SOURCE)
     set(LIBS
         "GL"
-        "glfw3"
+        # "glfw3"
         "pthread"
         "m"
         "asound"
-        ${CMAKE_SOURCE_DIR}/libraries/libGLEW.a
+        glfw
+        # ${CMAKE_SOURCE_DIR}/libraries/libGLEW.a
     )
     target_link_libraries(OceanEngine ${LIBS})
 endif()
