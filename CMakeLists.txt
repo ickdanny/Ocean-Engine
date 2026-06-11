@@ -73,7 +73,11 @@ add_custom_command(TARGET script POST_BUILD COMMAND ${CMAKE_COMMAND}
 include_directories(${PROJECT_DIRECTORIES})
 # include_directories(${CMAKE_SOURCE_DIR}/libraries/glfw/include)
 
-add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
+if(WIN32)
+    add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} resource.rc)
+else()
+    add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
+endif()
 
 add_dependencies(${PROJECT_NAME} script)
 
