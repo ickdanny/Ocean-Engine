@@ -1,0 +1,90 @@
+left_image _p
+right_image b4
+text Hello, Juna.
+stop
+
+left_image p
+right_image _b4
+text Sigh... first, it's   Master Celesary.      Second, are we really doing this in the     middle of the night,  again?
+stop
+
+left_image _p
+right_image b4
+text I mean, you could     always just let me    go...
+stop
+
+left_image p
+right_image _b4
+text And explain to        Sorceress that I let  her only apprentice   kill herself?
+stop
+text I know you think      you're hot stuff, but you're not ready.
+stop
+
+left_image _p
+right_image b4
+text I'm not the same girl as last time.
+stop
+
+left_image p
+right_image _b4
+text What, did you replace more of yourself with mana? Fantastic.      You're even less you  than before.
+stop
+
+left_image _p
+right_image b4
+text Maybe so, but power   always comes at a     price.
+stop
+
+left_image p
+right_image _b4
+text Power for what? To    defeat the Replicants and take back the     Mortal Realms? These  are fantasies, Ana.   You need to grow up.
+stop
+
+left_image _p
+right_image b4
+text So you're content withhiding away in this   cursed place until theReplicants find a way in and slaughter you  all?
+stop
+
+left_image p
+right_image _b4
+text Yes, I am, because    that's not going to   happen.
+stop
+text If you'd seen some of the things I have, youtoo would be content  to live in peace.
+stop
+
+left_image _p
+right_image b4
+text Don't give me that. I may have never been tobattle before, but canyou say the same aboutmy Master?
+stop
+
+left_image p
+right_image _b4
+text Your Master who, if I recall, deemed you    unfit to follow her   and asked me to keep  you here for your own sake?
+stop
+
+left_image _p
+right_image b4
+text I was left behind     because I was weak. I think you'll soon findout that that's no    longer the case.
+stop
+
+left_image p
+right_image _b4
+text Sorceress didn't leaveyou here so you could blindly follow in her footsteps. She wanted you to decide your ownpath.
+stop
+text You might be the      strongest mage in the whole city, but none  of that matters out   there.
+stop
+text You will die, and it  will be my fault for  not smacking enough   sense into you!
+stop
+
+left_image _p
+right_image b4
+text You keep saying that  to me, but you never  respect the choices I actually make.
+stop
+text I'm leaving, and      there's nothing you   can do to change my   mind.
+stop
+
+left_image p
+right_image _b4
+text So be it.
+music 09
+stop

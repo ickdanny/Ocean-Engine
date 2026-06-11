@@ -1,0 +1,47 @@
+left_image p
+right_image _b2
+text And who might you be?
+stop
+
+left_image _p
+right_image b2
+text That's my line! Last Ichecked, I didn't     live next to a        rainforest!
+stop
+
+left_image p
+right_image _b2
+text Are you claiming to bea neighbor? I moved   here a few months ago;it is strange that    this is our first timemeeting one another.
+stop
+
+left_image _p
+right_image b2
+text Well, I don't exactly go outside much, but  never mind that. Are  you the one in controlof these... things?
+stop
+
+left_image p
+right_image _b2
+text My experiments, you   mean? Of course I     control them. I am    trying to drive you   away from here, after all.
+stop
+
+left_image _p
+right_image b2
+text Well, that's uncalled for. I'm just trying  to pass through.
+stop
+
+left_image p
+right_image _b2
+text And in the process of doing so, you have    caused unspeakable    damage to my          previously pristine   laboratory.
+stop
+text Not to sound boorish, but I do believe we   have much to discuss  on the topic of       compensation.
+stop
+
+left_image _p
+right_image b2
+text What? Why would I pay you when you attacked me first? I'm out of  here, and you should  be glad I'm in a hurrytonight!
+stop
+
+left_image p
+right_image _b2
+text Oh no, I think we are just getting          started...
+music 05
+stop

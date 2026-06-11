@@ -1,0 +1,45 @@
+left_image p
+right_image _b3
+text You again? How many   times will I have to  write you up for nightflying before you'll  learn?
+stop
+
+left_image _p
+right_image b3
+text That law shouldn't    apply to me - I have  perfect night vision!
+stop
+
+left_image p
+right_image _b3
+text Or so you claim. How  many fingers am I     holding up?
+stop
+
+left_image _p
+right_image b3
+text ... How am I supposed to tell? Your hands   are behind your back!
+stop
+
+left_image p
+right_image _b3
+text So much for perfect   night vision... But   anyway, since this    counts as your third  infraction, I actuallyhave to take you in.
+stop
+
+left_image _p
+right_image b3
+text What? But this is likethe tenth time this   has happened!
+stop
+
+left_image p
+right_image _b3
+text Yup, a new law got    passed last month.    Three traffic         violations and you're in real trouble.
+stop
+
+left_image _p
+right_image b3
+text Oh, to the eleventh   hell with that. I'm   not going anywhere    with you, and if you  have a problem with   that, try stopping me!
+stop
+
+left_image p
+right_image _b3
+text ... I really don't getpaid enough for this.
+music 07
+stop

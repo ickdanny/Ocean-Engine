@@ -1,10 +1,6 @@
 .vscode
 build
-libraries
 
 *.png
-*.mid
-*.cfg
 *.zip
-*.dlg
 **/.DS_Store
