@@ -101,7 +101,6 @@ elseif(APPLE)
         "-framework AppKit"
         "-framework OpenGL"
         glfw
-        # ${CMAKE_SOURCE_DIR}/libraries/glfw/lib-arm64/libglfw3.a
     )
     target_link_libraries(OceanEngine ${LIBS})
     set_target_properties(OceanEngine PROPERTIES LINK_FLAGS "-Wl,-F/Library/Frameworks")
@@ -114,6 +113,7 @@ elseif(UNIX)
         "m"
         "asound"
         glfw
+        glew
         # ${CMAKE_SOURCE_DIR}/libraries/libGLEW.a
     )
     target_link_libraries(OceanEngine ${LIBS})
