@@ -9,7 +9,7 @@
 
 /* debug function to print the current directory */
 void printCurrentDir(){
-    #define bufferSize 50
+    #define bufferSize 256
     static char buffer[bufferSize] = {0};
     if(getcwd(buffer, bufferSize) != NULL){
         pgWarning(buffer);
