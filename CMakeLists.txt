@@ -117,7 +117,7 @@ elseif(UNIX)
         "m"
         "asound"
         glfw
-        glew
+        libglew_static
         # ${CMAKE_SOURCE_DIR}/libraries/libGLEW.a
     )
     target_link_libraries(OceanEngine ${LIBS})

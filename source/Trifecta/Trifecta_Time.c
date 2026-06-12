@@ -242,6 +242,7 @@ void sleepUntil(TimePoint timePoint){
 #ifdef __linux__
 
 #include <linux/time.h>
+#include <time.h>
 
 /* 
  * Returns TimePoint representing the specified number
