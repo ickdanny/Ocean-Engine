@@ -48,8 +48,8 @@ To build the game, the following are used:
 Install OYCN as follows on Windows using Powershell:
 
 ```
-git clone https://www.github.com/ickdanny/todo
-cd todo
+git clone https://www.github.com/ickdanny/On-Yellow-Crystal-Nights
+cd On-Yellow-Crystal-Nights
 .\build.ps1
 ```
 
@@ -58,8 +58,8 @@ cd todo
 Install OYCN as follows on Mac:
 
 ```
-git clone https://www.github.com/ickdanny/todo
-cd todo
+git clone https://www.github.com/ickdanny/On-Yellow-Crystal-Nights
+cd On-Yellow-Crystal-Nights
 ./build_mac.sh
 ```
 
@@ -67,8 +67,8 @@ cd todo
 
 Install OYCN as follows on Linux:
 ```
-git clone https://www.github.com/ickdanny/todo
-cd todo
+git clone https://www.github.com/ickdanny/On-Yellow-Crystal-Nights
+cd On-Yellow-Crystal-Nights
 ./build_linux.sh
 ```
 
