@@ -6,13 +6,12 @@ Instructions on how to play the game can be found in `packaging/README.txt`.
 
 ## Requirements
 
-Building OYCN will require GLFW and GLEW. These will be downloaded by Cmake during the build process.
+Building OYCN will require GLFW and GLEW. These will be downloaded by Cmake during the build process. Building and running the game require OpenGL 3.3.
 
 ### Windows
 
 To run the game, the following minimum requirements are stated:
 - Windows 10
-- Direct3D 11
 - 2GB RAM
 
 To build the game, the following are used:
