@@ -1,6 +1,5 @@
 On Yellow Crystal Nights
 August 6 2024
-August 17 2024 Patch 1.1
 A simple game where you may have fun dodging bullets.
 -------------------------------------------------------------------
 Do not use game resources for any purpose without prior permission.
@@ -9,7 +8,7 @@ Do not profit off game without prior permission.
 System Requirements
 
 Mac: M1 or above
-Windows: Windows 10 or above, 1GB ram
+Windows: Windows 10 or above, 2GB ram
 Linux: Just give it a try
 -------------------------------------------------
 Controls
@@ -51,3 +50,8 @@ As I don't really have a speech or anything planned for this dev note, I figure 
 See you next time.
 
 ickdanny
+
+----------------------
+v1.1
+August 17 2024
+----------------------
