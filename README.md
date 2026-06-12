@@ -87,7 +87,7 @@ On Mac, run the app called `EU06_OYCN`.
 
 ### Linux
 
-On Linux, run the executable titled `EU06_OYCN`. Because Linux does not offer a standard MIDI synth, users are recommended to have a separate Timidity process running at the same time as the agme. To run Timidity as an ALSA server, try the following:
+On Linux, run the executable titled `EU06_OYCN`. Because Linux does not offer a standard MIDI synth, users are recommended to have a separate Timidity process running at the same time as the game. To run Timidity as an ALSA server, try the following:
 
 ```
 timidity -iA
