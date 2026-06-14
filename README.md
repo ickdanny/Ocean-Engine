@@ -15,6 +15,7 @@ To run the game, the following minimum requirements are stated:
 - 2GB RAM
 
 To build the game, the following are used:
+- Git
 - Powershell
 - Cmake 3.30.2
 - MSVC 19.40.33813
